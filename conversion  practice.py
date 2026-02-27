@@ -1,0 +1,6 @@
+x = input("Enter any number:")
+y = input("Enter any number:")
+print(f"datatype of x:{type(x)}")
+x = int(x)
+y = int(y)
+print(x + y)

@@ -1,0 +1,12 @@
+itemname = input("Enter the itemname: ")
+price = int(input("Enter the price: "))
+quantity = float(input("Enter the quantity: "))
+subtotal = price * quantity
+GST = 0.15 * subtotal
+total = GST + subtotal
+print("Formatted Invoice")
+print(f"itemname is {itemname}")
+print(f"price is {price}")
+print(f"subtotal is {subtotal}")
+print(f"GST is {GST}")
+print(f"total is {total}")

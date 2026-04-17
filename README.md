@@ -9,7 +9,7 @@ Add requisition items
 Calculate total cost
 Check approval status
 Display final requisition summary
-🔧 Functions Overview
+ Functions Overview
 1. staff_info()
 
 This function collects basic staff information.

@@ -1,0 +1,83 @@
+Project Structure
+
+The program uses two main classes:
+
+1. Student Class
+
+This class represents a single student.
+
+ Features:
+Automatically generates a unique student ID
+Stores:
+Name
+Course
+Attendance
+ Important Code:
+id_counter = 1
+This is a class variable
+It ensures every student gets a unique ID
+self.student_id = Student.id_counter
+Student.id_counter += 1
+Assigns ID and increases counter
+ Methods:
+update_attendance() → updates attendance
+update_course() → updates course
+display() → returns student details
+2. AttendanceSystem Class
+
+This class manages all students.
+
+ Features:
+Stores student objects in a list
+Adds new students
+Updates existing student records
+Displays all students
+Calculates average attendance
+ Important Code:
+self.students = []
+List to store all student records
+ Methods:
+add_student() → adds new student
+update_student() → updates student by ID
+display_all_students() → shows all records
+calculate_average_attendance() → calculates average
+How the Program Works
+Step 1: Create system
+system = AttendanceSystem()
+Step 2: Add students
+system.add_student("Alice", "Math", 85)
+system.add_student("Bob", "Science", 90)
+Step 3: Display students
+system.display_all_students()
+Step 4: Update student
+system.update_student(1, attendance=95)
+Step 5: Calculate average
+avg = system.calculate_average_attendance()
+print(f"Average Attendance: {avg:.2f}%")
+Important Fix
+
+
+def _init_(self):
+
+
+
+def __init__(self):
+
+This fix is required, otherwise the program will not run properly.
+
+ Key Concepts Used
+Object-Oriented Programming (OOP)
+Classes and Objects
+Constructors (__init__)
+Lists
+Loops and Conditions
+Example Output
+Student added with ID: 1
+Student added with ID: 2
+
+ID: 1, Name: Alice, Course: Math, Attendance: 85%
+ID: 2, Name: Bob, Course: Science, Attendance: 90%
+
+Student record updated.
+
+Average Attendance: 92.50%
